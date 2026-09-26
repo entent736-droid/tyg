@@ -212,6 +212,12 @@ export const NAV_SECTIONS: NavSection[] = [
         icon: CalendarDays,
         permissions: ["schedules.view"],
       },
+      {
+        label: "Certificats de scolarité",
+        href: "/app/admin/school-certificates",
+        icon: Award,
+        permissions: ["certificates.view"],
+      },
     ],
   },
   {

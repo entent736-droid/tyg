@@ -925,7 +925,7 @@ export interface Database {
         Row: {
           id: string;
           student_id: string;
-          course_id: string;
+          course_id: string | null;
           document_id: string | null;
           certificate_number: string;
           issue_date: string;
@@ -933,13 +933,14 @@ export interface Database {
           qr_token: string | null;
           created_by: string;
           validated_by: string | null;
+          certificate_type: string;
           created_at: string;
           updated_at: string;
         };
         Insert: {
           id?: string;
           student_id: string;
-          course_id: string;
+          course_id?: string | null;
           document_id?: string | null;
           certificate_number: string;
           issue_date?: string;
@@ -947,6 +948,7 @@ export interface Database {
           qr_token?: string | null;
           created_by: string;
           validated_by?: string | null;
+          certificate_type?: string;
           created_at?: string;
           updated_at?: string;
         };
